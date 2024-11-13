@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.outer-div {
+  background-color: rgba(173, 130, 78, 0.723);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-div {
+  background-color: gainsboro;
+  width: 60%;
+  height: 90%;
+  border-radius: 10px;
+}
+
+.background-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.option-menu {
+  background-color: rgb(232, 209, 167);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+}
+
+.back-div {
+  height: 55%;
+  position: relative;
+}
+
+.facts-div {
+  background-color: rgb(232, 209, 167);
+  height: 35%;
+  border-radius: 10px;
+
+  
+}
+
+.dino {
+  position: absolute;
+  top: 12px;
+  left: 25px;
+  font-family: 'Cinzel';
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.dino .mysteries {
+  font-family: 'Sour Gummy';
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(88, 90, 93);
+  width: 250px;
+  margin-bottom: 0;
+}
+
+.info-dino {
+  font-family: 'Sour Gummy';
+  text-align: center;
+  margin-left: 20px;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.img-raptor {
+  height: 120px;
+  width: 120px;
+  margin-top: 15px;
+}
+.clicking-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 300px;
+  margin-left: 300px;
+}
+
+.clicking-div:hover {
+  border-color: greenyellow;
+  border-style: solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.intro {
+  font-family: 'Pacifico';
+  color: rgb(12, 169, 169);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.tarbo-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  position: absolute;
+  left: 10px;
+  top:10px;
+}
+.stego-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  position: absolute;
+  left: 10px;
+  top:240px;
+}
+.rap-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  position: absolute;
+  left: 10px;
+  top:490px;
+}
+.stego2-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  position: absolute;
+  right: 10px;
+  top:10px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.raptor2-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  position: absolute;
+  right: 10px;
+  top:240px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.tarbo2-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  position: absolute;
+  right: 10px;
+  top:490px;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
