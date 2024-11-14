@@ -1,4 +1,4 @@
-body {
+/*body {
   margin: 0;
   padding: 0;
 }
@@ -155,5 +155,146 @@ a {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+*/
 
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.outer-div {
+  background-color: rgba(173, 130, 78, 0.723);
+  width: 800px; /* Fixed width to maintain desktop layout */
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-div {
+  background-color: gainsboro;
+  width: 60%;
+  height: 90%;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.background-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.option-menu {
+  background-color: rgb(232, 209, 167);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+}
+
+.intro {
+  font-family: 'Pacifico';
+  color: rgb(12, 169, 169);
+  font-size: 24px;
+  text-align: center;
+}
+
+.dino {
+  font-family: 'Cinzel';
+  font-weight: bold;
+  font-size: 22px;
+  padding: 10px;
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  width: 60%;
+  text-align: center;
+}
+
+.mysteries {
+  font-family: 'Sour Gummy';
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(88, 90, 93);
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.facts-div {
+  background-color: rgb(232, 209, 167);
+  height: 35%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.clicking-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.img-raptor {
+  height: 120px;
+  width: 120px;
+  margin-top: 15px;
+}
+
+.clicking-div:hover {
+  border-color: greenyellow;
+  border-style: solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Dinosaur images on the sides */
+.tarbo-img, .stego-img, .rap-img, .stego2-img, .raptor2-img, .tarbo2-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  position: absolute;
+}
+
+.tarbo-img { left: 5%; top: 10%; }
+.stego-img { left: 5%; top: 40%; }
+.rap-img { left: 5%; top: 70%; }
+.stego2-img { right: 5%; top: 10%; transform: scaleX(-1); }
+.raptor2-img { right: 5%; top: 40%; transform: scaleX(-1); }
+.tarbo2-img { right: 5%; top: 70%; transform: scaleX(-1); }
+
+/* Force Desktop Layout on Mobile */
+@media only screen and (max-width: 1200px) {
+  .outer-div {
+    width: 800px; /* Fixed width to enforce desktop layout */
+    height: auto;
+  }
+
+  .inner-div {
+    width: 100%;
+    padding: 20px;
+  }
+}
 
