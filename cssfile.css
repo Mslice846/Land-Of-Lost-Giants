@@ -17,6 +17,7 @@ body {
   width: 60%;
   height: 90%;
   border-radius: 10px;
+ 
 }
 
 .background-img {
@@ -41,9 +42,7 @@ body {
 .facts-div {
   background-color: rgb(232, 209, 167);
   height: 35%;
-  border-radius: 10px;
-
-  
+  border-radius: 10px; 
 }
 
 .dino {
@@ -84,6 +83,7 @@ body {
   flex-direction: column;
   width: 300px;
   margin-left: 300px;
+
 }
 
 .clicking-div:hover {
@@ -155,4 +155,5 @@ a {
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+
 
