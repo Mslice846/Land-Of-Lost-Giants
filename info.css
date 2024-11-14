@@ -68,14 +68,32 @@ body {
   margin-bottom: 50px;
 }
 
-@media (min-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-}
 
 @media (max-width: 767px) {
-  body {
-    font-size: 14px;
+  .main-title-upperdiv, .rex-main-div, .size-div, .weight-div, .bite-div {
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .main-title, .rex-heading, .rex-desc {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .rex-desc {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .size-div, .weight-div, .bite-div {
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  .spino-img, .rex-img, .trike-img, .arg-img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
   }
 }
