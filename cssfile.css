@@ -1,4 +1,4 @@
-body {
+/*body {
   margin: 0;
   padding: 0;
 }
@@ -204,5 +204,111 @@ a {
 
   .mysteries {
     font-size: 12px;
+  }
+}
+*/
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.outer-div {
+  background-color: rgba(173, 130, 78, 0.723);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-div {
+  background-color: gainsboro;
+  width: 60%;
+  height: 90%;
+  border-radius: 10px;
+}
+
+.background-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.option-menu {
+  background-color: rgb(232, 209, 167);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 65px;
+}
+
+/* Other elements styling here... */
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+  .outer-div {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+    align-items: center;
+  }
+
+  .inner-div {
+    width: 90%;
+    height: auto;
+    border-radius: 5px;
+  }
+
+  .background-img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .dino {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .mysteries {
+    font-size: 12px;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .clicking-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 20px 0;
+  }
+
+  .img-raptor {
+    width: 80px;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .tarbo-img, .stego-img, .rap-img, .stego2-img, .raptor2-img, .tarbo2-img {
+    width: 60px; /* Smaller images for mobile */
+    height: auto;
+    position: static; /* Remove absolute positioning for mobile */
+    margin: 5px auto; /* Center-align for mobile */
+    display: block;
+  }
+
+  .intro {
+    font-size: 18px;
+    text-align: center;
   }
 }
