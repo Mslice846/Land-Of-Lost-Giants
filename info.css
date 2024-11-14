@@ -67,3 +67,15 @@ body {
 .ankylo-img-div {
   margin-bottom: 50px;
 }
+
+@media (min-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
